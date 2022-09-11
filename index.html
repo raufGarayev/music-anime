@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="text">
+        <p>Music Player</p>
+    </div>
+    <div class="player">
+        
+        <div class="player-img">
+            <img src="" alt="Album Art">
+        </div>
+        <div class="player-main">
+            <audio src=""></audio>
+            <div class="player-controls">
+                <i class="fas fa-backward" id="prev" title="Previous"></i>
+                <i class="fas fa-play main-button" id="play" title="Play"></i>
+                <i class="fas fa-forward" id="next" title="Next"></i>
+            </div>
+            <div class="player-progress">
+                <span id="current">0:00</span>
+                <div class="progress-container" id="progress-container">
+                    <div class="progress" id="progress"></div>
+                </div>
+                <span id="duration">2:34</span>
+            </div>
+        </div>
+        <div class="player-songname">
+            <h2 id="title">Mahni adi</h2>
+            <h3 id="artist">Mahni oxuyan shexs</h3>
+        </div>
+    </div>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>

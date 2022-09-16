@@ -48,6 +48,8 @@ function playSong() {
     isPlaying = true
 
     playBtn.classList.replace('fa-play', 'fa-pause')
+
+    imgDiv.classList.remove('active')
     imgDiv.classList.add('active')
     
     music.play()
@@ -77,7 +79,6 @@ prevBtn.addEventListener('click', prevSong)
 nextBtn.addEventListener('click', nextSong)
 
 function loadSong(song) {
-
     title.textContent = song.displayName
     artistEl.textContent = song.artist
     music.src = `./../../musics/${song.name}.mp3`

@@ -60,7 +60,7 @@ body {
 }
 
 .active {
-  animation: 20s roller infinite;
+  animation: 20s roller linear infinite;
 }
 
 .player-progress {

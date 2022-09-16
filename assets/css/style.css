@@ -28,9 +28,10 @@ body {
   position: absolute;
   bottom: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 220px;
   align-items: center;
-  padding-left: 20px;
+  padding: 0 20px;
 }
 
 .player-img {
@@ -39,7 +40,7 @@ body {
 }
 
 .player-main {
-  width: 620px;
+  width: 540px;
 }
 
 .player-img img {
@@ -112,13 +113,13 @@ body {
 }
 
 .player-songname {
-  width: 250px;
+  /* width: 150px; */
   display: flex;
   flex-direction: column;
 }
 
-h2, h3 {
-  display: inline;
+#title {
+  font-weight: 700;
 }
 
 .overlay {
@@ -191,4 +192,21 @@ h2, h3 {
 .list-item:hover {
   filter: brightness(80%);
   cursor: pointer;
+}
+
+.left-side {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  width: 300px;
+}
+
+.change-volume {
+  margin-top: 30px;
+  background-color: #fff;
+}
+
+.settings-container {
+  width: 300px;
+  text-align: center;
 }

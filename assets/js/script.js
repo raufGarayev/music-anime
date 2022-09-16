@@ -16,6 +16,7 @@ const imgDiv = document.querySelector('.player-img')
 
 const barBtn = document.getElementById('burger')
 const list = document.querySelector('.overlay-content')
+const volumeRange = document.querySelector('.change-volume');
 
 
 
@@ -220,3 +221,10 @@ const X = document.querySelector('.closebtn')
 X.addEventListener('click', function(e) {
     closeNav()
 })
+
+function changeVolume(volume) {
+    console.log(volume)
+    music.volume = volume;
+}
+
+volumeRange.addEventListener('input', (e) => changeVolume(parseInt(e.target.value) / 100));
